@@ -4,4 +4,4 @@ const app = require('./app.js');
 
 const server = http.createServer(app);
 
-server.listen(process.env.PORT, () => console.log(`Server running at port - ${port}`));
+server.listen(process.env.PORT, () => console.log(`Server running at port - ${process.env.PORT}`));
