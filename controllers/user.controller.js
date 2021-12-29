@@ -1,7 +1,8 @@
 const configFirebase = require("../firebase");
 
 function getAllUsers(req, res) {
-  try {
+  res.status(200).json("In development");
+  /*try {
     var users = []
     const listAllUsers = (nextPageToken) => {
       configFirebase.admin
@@ -24,7 +25,7 @@ function getAllUsers(req, res) {
     listAllUsers()
   } catch (error) {
     res.status(500).send(error);
-  }
+  }*/
 }
 
 module.exports = {
